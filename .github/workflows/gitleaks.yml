@@ -15,3 +15,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITLEAKS_NOTIFY_USER_LIST: '@yurii.budnyi'
+      - name: Check artifact
+        run: |
+          ls
