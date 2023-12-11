@@ -19,4 +19,7 @@ jobs:
           ignore-unfixed: true
           format: 'table'
           output: 'trivy-results.sarif'
-          severity: 'CRITICAL'
+          severity: 'CRITICAL, HIGHT'
+      - name: Check artifact
+        run: |
+          ls
